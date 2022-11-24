@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+<struts>
+<package name="default" extends="struts-default">
+
+<action name="do" class="com.act">
+<result name="success">/view.jsp</result>
+<result name="failure">/noview.jsp</result>
+</action>
+
+<action name="viewact" class="com.dataview">
+<result name="success">/display.jsp</result>
+<result name="failure">/noview.jsp</result>
+</action>
+
+<action name="edit" class="com.update">
+<result name="success">/edit.jsp</result>
+<result name="failure">/noview.jsp</result>
+</action>
+
+<action name="update" class="com.updatedb">
+<result name="success">/updb.jsp</result>
+<result name="failure">/noview.jsp</result>
+</action>
+
+<action name="del" class="com.delete">
+<result name="success">/deletedb.jsp</result>
+<result name="failure">/noview.jsp</result>
+</action>
+
+
+</package>
+</struts>
